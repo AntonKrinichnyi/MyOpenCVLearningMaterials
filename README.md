@@ -1,1 +1,2 @@
-# MyOpenCVLearning
+# MyOpenCVLearningMaterials
+В цьому репозиторії я буду викладати всі цікаві матеріали пов'язані з OpenCV та дотичними до неї бібліотеками
