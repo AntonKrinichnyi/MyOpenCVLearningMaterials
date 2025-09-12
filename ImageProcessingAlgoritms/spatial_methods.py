@@ -64,12 +64,12 @@ def erode_filter_exmpl(image):
     cv2.imshow("Erode", processed_image)
 
 
-
-image1 = cv2.imread("static/noise.jpeg")
-image2 = image1.copy()
-image3 = image1.copy()
-cv2.imshow("Original image", image1)
-median_blure_exmpl(image1)
-mean_2d_filter_exmpl(image2)
-erode_filter_exmpl(image3)
-cv2.waitKey(0)
+if __name__ == "__main__":
+    image1 = cv2.imread("static/noise.jpeg")
+    image2 = image1.copy()
+    image3 = image1.copy()
+    cv2.imshow("Original image", image1)
+    median_blure_exmpl(image1)
+    mean_2d_filter_exmpl(image2)
+    erode_filter_exmpl(image3)
+    cv2.waitKey(0)
