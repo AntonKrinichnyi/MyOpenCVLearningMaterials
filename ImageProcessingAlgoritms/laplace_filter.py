@@ -40,7 +40,7 @@ if __name__ == "__main__":
     image_gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
     dst = cv2.Laplacian(image_gray, ddepth=ddepth, ksize=kernel_size)
-    abs_dst = cv2.convertScaleAbs(dst=dst)
+    abs_dst = cv2.convertScaleAbs(src=dst)
 
     cv2.imshow("Filtered image", abs_dst)
     cv2.waitKey(0)
